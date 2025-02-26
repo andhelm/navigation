@@ -1,0 +1,24 @@
+robotic_learning/
+│
+├── arenas/                    # For functions related to generating and manipulating the arena
+│   ├── __init__.py
+│   ├── environment.py         # Contains the logic for environment generation, obstacles, and the robot's movement
+│   └── random_env.py          # Function that creates a random environment with obstacles, robot start, and objective
+│
+├── agent/                     # For the robot's logic and model
+│   ├── __init__.py
+│   ├── robot.py               # Defines the robot class with movement and jumping functions
+│   └── model.py               # Contains the neural network or learning agent (training, prediction)
+│
+├── rewards/                   # Reward functions for model training
+│   └── reward_functions.py    # Defines the reward function for different tasks and outcomes
+│
+├── utils/                     # For utility functions (e.g., visualization, data handling)
+│   ├── __init__.py
+│   └── visualization.py       # For rendering the arena and robot movements
+│
+├── data/                      # Stores any datasets or logs if needed
+│
+├── config.py                  # Configuration file (grid size, randomization settings, etc.)
+├── main.py                    # The main file to train the model and simulate robot behavior
+└── requirements.txt           # For all the dependencies used in the project
